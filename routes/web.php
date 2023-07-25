@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::get('/empresa', function () {
     return view('empresa');
 });
+Route::view('/empresa2', '/empresa');
 
 Route::get('/produto/{id}', function ($id) {
     return 'O id do produto é: ' . $id;
